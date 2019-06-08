@@ -10,6 +10,6 @@ Works perfectly with Construct 2 games.
 1) Download [prebuilt Electron binaries](https://github.com/electron/electron/releases)  
   
 2) Unpack HTML5 Electron Application into the **/resources/app** directory located in your **Electron folder**  
-*You should create this folder if it doesn't exist initially.*
+*You should create the **app** folder if it doesn't exist initially.*
   
 3) Put HTML5 & Javascript files into the **game** folder
