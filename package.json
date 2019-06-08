@@ -1,0 +1,48 @@
+{
+  "name": "HTML5-Electron-Application",
+  "version": "1.0.0",
+  "description": "Simple Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "cross-env ELECTRON_BUILDER_ALLOW_UNRESOLVED_DEPENDENCIES=true electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kun0h/HTML5-Electron-Application"
+  },
+  "keywords": [
+    "Electron",
+    "HTML5",
+    "javascript"
+  ],
+  "author": "Kuno Hoshiko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kun0h/HTML5-Electron-Application/issues"
+  },
+  "homepage": "https://github.com/kun0h/HTML5-Electron-Application/blob/master/README.md",
+  "dependencies": {
+    "fs-extra": "^3.0.1",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.4",
+    "electron": "^4.2.3",
+    "electron-builder": "^20.5.1"
+  },
+  "build": {
+    "productName": "HTML5 Electron Application",
+    "appId": "com.kunoh.hep",
+    "directories": {
+      "output": "build"
+    },
+    "files": [
+      "."
+    ],
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}
